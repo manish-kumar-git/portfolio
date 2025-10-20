@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manish Kumar - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, showcasing my expertise as a Flutter Developer with a focus on healthcare technology.
 
-First, run the development server:
+## 🚀 Live Demo
 
+Visit the live website: [Portfolio Website](https://your-portfolio-url.vercel.app)
+
+## ✨ Features
+
+- **Modern Design**: Clean, professional layout with smooth animations
+- **Healthcare Focus**: Specialized content highlighting healthcare technology projects
+- **Responsive**: Fully responsive design that works on all devices
+- **SEO Optimized**: Built-in SEO features for better search engine visibility
+- **Performance**: Optimized for speed and performance
+- **Accessibility**: Built with accessibility best practices
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📱 Projects Showcased
+
+### Professional Projects
+- **Blast Golf 2.0**: AI-powered golf swing analysis app
+- **GeoShield Mobile**: CJIS-compliant law enforcement situational awareness app
+- **NPS 2.0**: Government pension management system
+- **Palette Edu**: Educational iPad app for interactive learning
+
+### Healthcare Concepts
+- **TeleMed Connect**: Secure telemedicine platform prototype
+- **HealthVault**: Personal health records management system
+- **CareCircle**: AI-powered elderly care support app
+
+### Personal Projects
+- **Fanwelt**: Fantasy gaming app prototype
+- **Social Media Login**: Authentication system
+- **WayCool**: E-commerce platform
+- **Indent**: Code formatting tool
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/manish-kumar-git/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+portfolio/
+├── public/
+│   ├── images/          # Project images
+│   ├── ManishResume.pdf # Resume file
+│   └── robots.txt       # SEO robots file
+├── src/
+│   ├── app/
+│   │   ├── globals.css  # Global styles
+│   │   ├── layout.tsx   # Root layout
+│   │   ├── page.tsx     # Home page
+│   │   └── sitemap.ts   # SEO sitemap
+│   ├── components/      # React components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Projects.tsx
+│   │   └── Skills.tsx
+│   └── lib/
+│       └── data.ts      # Portfolio data
+├── tailwind.config.js   # Tailwind configuration
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Light Theme**: Clean, professional light theme design
+- **Gradient Backgrounds**: Subtle gradients for visual appeal
+- **Smooth Animations**: Framer Motion powered animations
+- **Glass Morphism**: Modern glass effect elements
+- **Interactive Elements**: Hover effects and smooth transitions
 
-## Deploy on Vercel
+## 📧 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email**: manish.reachout@gmail.com
+- **Phone**: +91-854-195-4641
+- **LinkedIn**: [manish-kumar-410796237](https://www.linkedin.com/in/manish-kumar-410796237/)
+- **GitHub**: [manish-kumar-git](https://github.com/manish-kumar-git)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/manish-kumar-git/portfolio/issues).
+
+---
+
+**Built with ❤️ by Manish Kumar**
