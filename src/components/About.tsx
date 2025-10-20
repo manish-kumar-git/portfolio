@@ -30,7 +30,7 @@ const About = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: 'easeOut'
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   };
@@ -44,7 +44,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
@@ -64,7 +64,7 @@ const About = () => {
           
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
             Passionate about transforming healthcare through innovative mobile technology
           </motion.p>
@@ -80,13 +80,13 @@ const About = () => {
             className="space-y-8"
           >
             <motion.div variants={itemVariants}>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 text-white mb-4">
                 Professional Journey
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 text-gray-300 leading-relaxed mb-6">
                 {personalInfo.description}
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-600 text-gray-300 leading-relaxed">
                 {personalInfo.healthcareMission}
               </p>
             </motion.div>
@@ -100,13 +100,13 @@ const About = () => {
                 <motion.div
                   key={stat.label}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl text-center"
+                  className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 from-gray-800 to-gray-700 rounded-xl text-center"
                 >
-                  <stat.icon className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-3" />
-                  <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
+                  <stat.icon className="w-8 h-8 text-purple-600 text-purple-400 mx-auto mb-3" />
+                  <div className="text-3xl font-bold text-gray-900 text-white mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
+                  <div className="text-sm text-gray-600 text-gray-400">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -123,11 +123,11 @@ const About = () => {
             className="space-y-8"
           >
             <motion.div variants={itemVariants}>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 text-white mb-4">
                 Healthcare Impact Statement
               </h3>
-              <div className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl border-l-4 border-purple-500">
-                <p className="text-lg text-gray-700 dark:text-gray-300 italic">
+              <div className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 from-gray-800 to-gray-700 rounded-xl border-l-4 border-purple-500">
+                <p className="text-lg text-gray-700 text-gray-300 italic">
                   "{healthcareFocus.statement}"
                 </p>
               </div>
@@ -135,7 +135,7 @@ const About = () => {
 
             {/* Healthcare Focus Areas */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+              <h4 className="text-xl font-semibold text-gray-900 text-white mb-6">
                 Focus Areas
               </h4>
               <div className="space-y-4">
@@ -148,16 +148,16 @@ const About = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.02, x: 10 }}
-                      className="flex items-start space-x-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                      className="flex items-start space-x-4 p-4 bg-white bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
                     >
-                      <div className="flex-shrink-0 p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
-                        <IconComponent className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                      <div className="flex-shrink-0 p-2 bg-purple-100 bg-purple-900 rounded-lg">
+                        <IconComponent className="w-6 h-6 text-purple-600 text-purple-400" />
                       </div>
                       <div>
-                        <h5 className="font-semibold text-gray-900 dark:text-white mb-1">
+                        <h5 className="font-semibold text-gray-900 text-white mb-1">
                           {area.title}
                         </h5>
-                        <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        <p className="text-gray-600 text-gray-300 text-sm">
                           {area.description}
                         </p>
                       </div>
