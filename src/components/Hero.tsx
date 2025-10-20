@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { personalInfo, contactInfo } from '@/lib/data';
 
@@ -31,7 +31,7 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: 'easeOut'
+        ease: easeOut
       }
     }
   };
@@ -42,7 +42,7 @@ const Hero = () => {
       transition: {
         duration: 4,
         repeat: Infinity,
-        ease: 'easeInOut'
+        ease: easeOut
       }
     }
   };
@@ -231,7 +231,7 @@ const Hero = () => {
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 2, repeat: Infinity, ease: easeOut }}
           className="flex flex-col items-center text-gray-600"
         >
           <span className="text-sm mb-2">Scroll to explore</span>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, easeOut } from 'framer-motion';
 import { ExternalLink, Github, Play, Store, Smartphone, Heart, Code, Lightbulb, Star } from 'lucide-react';
 import { projects } from '@/lib/data';
 
@@ -37,7 +37,7 @@ const Projects = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: 'easeOut'
+        ease: easeOut
       }
     }
   };

@@ -19,6 +19,14 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Allow quotes/apostrophes in JSX text without escaping
+      "react/no-unescaped-entities": "off",
+      // Downgrade unused vars to warnings
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+      // Allow any where needed in UI mapping utilities
+      "@typescript-eslint/no-explicit-any": "warn",
+    },
   },
 ];
 

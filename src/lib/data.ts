@@ -215,7 +215,9 @@ export const projects: Project[] = [
     ],
     image: '/images/healthvault.jpg',
     category: 'healthcare',
-    status: 'concept'
+    status: 'concept',
+    startDate: '2022-01-01',
+    endDate: '2022-12-31'
   },
   {
     id: 'palette-edu',

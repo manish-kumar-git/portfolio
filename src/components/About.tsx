@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { Heart, Shield, Database, Video, Accessibility, Code, Users, Award, Target } from 'lucide-react';
 import { personalInfo, healthcareFocus } from '@/lib/data';
 
@@ -30,7 +30,7 @@ const About = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94]
+        ease: easeOut
       }
     }
   };

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { Heart, ArrowUp, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { contactInfo, personalInfo } from '@/lib/data';
 
@@ -58,7 +58,7 @@ const Footer = () => {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: 'easeOut'
+        ease: easeOut
       }
     }
   };

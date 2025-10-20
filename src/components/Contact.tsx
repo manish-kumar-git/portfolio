@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, Send, MessageCircle, Heart } from 'lucide-react';
 import { contactInfo } from '@/lib/data';
 
@@ -55,7 +55,7 @@ const Contact = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: 'easeOut'
+        ease: easeOut
       }
     }
   };
